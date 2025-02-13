@@ -110,6 +110,7 @@ a{
   margin: 0 auto;
 
   padding: 0px 0px 0px 160px;
+  position: relative;
 }
 .logo-text{
   font-family: var(--font-base);
@@ -121,8 +122,10 @@ a{
 .header{
   height: 100px;
   width: 100%;
-  position: absolute;
+  position: sticky;
   top: 0px;
+  z-index: 100;
+  transition: 1s;
 }
 .header__content{
   display: flex;
@@ -133,7 +136,7 @@ a{
 }
 .header__banner{
   position: absolute;
-  top: 0px;
+  top: -310px;
   right: 0px;
   z-index: 1;
 }
@@ -153,7 +156,7 @@ a{
 }
 /* SECTION */
 .banner{
-  margin-top: 294px;
+  margin-top: 210px;
 }
 .banner__content__title{
   font-family: var(--font-base);

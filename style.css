@@ -1,15 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 @font-face {
-    font-family: "Arial";
+    font-family: var(--font-02);
     src:
-      local("Arial"),
+      local(var(--font-02)),
       url("arial_bolditalicmt.ttf"),
       url("arialmt.ttf");
   }
-html, body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+body{
+  background: #222222;
+}
+:root{
+  --font-base: "Prata";
+  --font-02: "Arial";
 }
 a{
   text-decoration: none;
@@ -20,36 +111,107 @@ a{
 
   padding: 0px 0px 0px 160px;
 }
+.logo-text{
+  font-family: var(--font-base);
+  color: #fff;
+  font-size: 36px;
+  margin-right: 205px;
+  cursor: pointer;
+}
 .header{
   height: 100px;
-  background: #222222;
   width: 100%;
-
   position: absolute;
   top: 0px;
 }
 .header__content{
   display: flex;
   align-items: center;
- 
-
   width: 100%;
   position: relative;
+  padding-top: 30px;
 }
 .header__banner{
   position: absolute;
   top: 0px;
   right: 0px;
+  z-index: 1;
 }
 .header__ul{
   display: flex;
   align-items: center;
+  gap: 29px;
+  list-style-type: none;
 }
 .header__li{
   color: #fff;
+  cursor: pointer;
+  font-style: italic;
+}
+.header__li:hover{
+  color: #d4f039;
 }
 /* SECTION */
-.section{
-  height: 1010px;
-  background: #222222;
+.banner{
+  margin-top: 294px;
+}
+.banner__content__title{
+  font-family: var(--font-base);
+  color: #fff;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 120%;
+}
+.banner__content__subtitle{
+  font-family: var(--font-02);
+  color: #fff;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 120%;
+}
+.banner__content__price{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.banner__content__price span{
+ display: block;
+}
+.banner__content__price__num{
+  font-family: var(--font-base);
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.banner__content__price__text{
+  font-family: var(--font-02);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.banner__content__price__items{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 64px;
+}
+.banner__content__order{
+  background-color: #fff;
+  padding: 32px 50px;
+  font-family: var(--font-02);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  cursor: pointer;
+  width: max-content;
+  transition: 0.4s;
+}
+.banner__content__order:hover{
+  background-color: #80902a;
+  color: #fff;
 }

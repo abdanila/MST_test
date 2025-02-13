@@ -215,3 +215,52 @@ a{
   background-color: #80902a;
   color: #fff;
 }
+/* BANNER-02 */
+.banner-info{
+  margin-top: 99px;
+}
+.banner-info__container{
+  max-width: 1920px;
+  padding: 0px;
+  margin: 0 auto;
+}
+.banner-info__grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 53px;
+}
+.banner-info__grid__items{
+  position: relative;
+}
+.banner-info__grid__items__list{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding-top: 53px;
+}
+.banner-info__grid__items__list__li{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 0px 40px 0px;
+}
+.line{
+  border-bottom: 1px solid #55565A;
+}
+.banner-info__grid__items__list__li__text{
+  font-family: var(--font-02);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #fff;
+}
+.banner-info__grid__items__list__li button{
+  padding: 32px 52px;
+  font-family: var(--font-02);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

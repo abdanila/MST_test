@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@font-face {
+    font-family: "Arial";
+    src:
+      local("Arial"),
+      url("arial_bolditalicmt.ttf"),
+      url("arialmt.ttf");
+  }
+html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+
+  padding: 0px 0px 0px 160px;
+}
+.header{
+  height: 100px;
+  background: #222222;
+  width: 100%;
+
+  position: absolute;
+  top: 0px;
+}
+.header__content{
+  display: flex;
+  align-items: center;
+ 
+
+  width: 100%;
+  position: relative;
+}
+.header__banner{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.header__ul{
+  display: flex;
+  align-items: center;
+}
+.header__li{
+  color: #fff;
+}
+/* SECTION */
+.section{
+  height: 1010px;
+  background: #222222;
+}

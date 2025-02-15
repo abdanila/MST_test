@@ -880,6 +880,9 @@ a{
   gap: 15px;
   padding: 0px 0px 5px;
 }
+.form__content{
+  background-size: cover;
+}
 }
 @media(max-width:990px){
   .header__banner img {

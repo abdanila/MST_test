@@ -918,6 +918,10 @@ a{
   grid-template-columns: 0fr 2fr 1fr;
   gap: 20px;
 }
+.banner__content__price {
+  width: max-content;
+  width: 297px;
+}
 .form__bg-2 {
   position: absolute;
   width: 310px;

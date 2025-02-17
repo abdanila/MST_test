@@ -315,7 +315,7 @@ a{
   border-radius: 24px;
   height: 628px;
   padding: 60px 0px 60px 134px;
-  background-image: url("/img/form-bg.png");
+  background-image: url("./img/form-bg.png");
   background-size: contain;
   background-position-x: right;
   background-repeat: no-repeat;
@@ -512,7 +512,7 @@ a{
   border-radius: 24px;
   height: 628px;
   padding: 60px 0px 60px 100px;
-  background-image: url(/img/form-bg.png);
+  background-image: url(./img/form-bg.png);
   background-size: contain;
   background-position-x: right;
   background-repeat: no-repeat;
@@ -605,7 +605,7 @@ a{
   border-radius: 24px;
   height: 628px;
   padding: 40px 0px 0px 80px;
-  background-image: url(/img/form-bg.png);
+  background-image: url(./img/form-bg.png);
   background-size: contain;
   background-position-x: right;
   background-repeat: no-repeat;
@@ -777,7 +777,7 @@ a{
   border-radius: 24px;
   height: 550px;
   padding: 60px 0px 60px clamp(3.125rem, -6.2317rem + 14.6199vw, 6.25rem);
-  background-image: url("/img/form-bg.png");
+  background-image: url("./img/form-bg.png");
   background-size: contain;
   background-position-x: right;
   background-repeat: no-repeat;
@@ -956,7 +956,7 @@ a{
   border-radius: 24px;
   height: 444px;
   padding: 50px 0px 60px clamp(3.125rem, -6.2317rem + 14.6199vw, 6.25rem);
-  background-image: url(/img/form-bg.png);
+  background-image: url(./img/form-bg.png);
   background-size: cover;
   background-position-x: right;
   background-repeat: no-repeat;

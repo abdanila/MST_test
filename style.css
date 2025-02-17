@@ -102,6 +102,12 @@ body{
   --font-base: "Prata";
   --font-02: "Arial";
 }
+.mob{
+  display: none;
+}
+.none{
+  display: none!important;
+}
 a{
   text-decoration: none;
 }
@@ -1046,6 +1052,12 @@ a{
 }
 }
 @media(max-width:544px){
+  .pc{
+    display: none;
+  }
+  .mob{
+    display: block;
+  }
   .logo-text {
     font-size: 24px;
     margin-right: 30px;
@@ -1121,6 +1133,49 @@ a{
     position: absolute;
     bottom: 87px;
     display: flow-root;
+}
+.header__content__bm__btn{
+  width: 30px;
+  height: 17px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 10;
+}
+.header__content{
+  justify-content: space-between;
+  padding-right: 30px;
+  position: absolute;
+  left: 0;
+}
+.bm__line{
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+}
+.close:nth-child(1){
+  position: absolute;
+  transform: rotate(45deg);
+}
+.close:nth-child(2){
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.close:nth-child(3){
+  display: none;
+}
+.header__ul{
+  flex-direction: column;
+}
+.header__content__bm{
+  position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    top: 0px;
+    height: 100vw;
+    padding-top: 100px;
 }
 }
 @media(max-width:450px){

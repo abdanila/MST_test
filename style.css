@@ -1050,6 +1050,9 @@ a{
   margin-right: 90px;
   cursor: pointer;
 }
+.header__content-logo{
+  z-index: 10;
+}
 }
 @media(max-width:544px){
   .pc{
@@ -1063,7 +1066,7 @@ a{
     margin-right: 30px;
 }
   .header__li {
-    font-size: 10px;
+    font-size: 16px;
   }
   .banner__content__title {
     font-size: clamp(2rem, 1.6429rem + 1.7857vw, 2.25rem);
@@ -1149,6 +1152,7 @@ a{
   padding-right: 30px;
   position: absolute;
   left: 0;
+  padding-left: 30px;
 }
 .bm__line{
   height: 3px;
@@ -1170,12 +1174,19 @@ a{
   flex-direction: column;
 }
 .header__content__bm{
-  position: absolute;
+   position: absolute;
     width: 100%;
     background-color: rgba(0, 0, 0);
     top: 0px;
-    height: 100vw;
+    height: 200vw;
     padding-top: 100px;
+    left: 0;
+}
+.footer__ul {
+  gap: 25px;
+}
+.scroll-none{
+  overflow: hidden;
 }
 }
 @media(max-width:450px){

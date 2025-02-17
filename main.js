@@ -13,11 +13,12 @@ const scrollTop = document.pageYOffset || document.documentElement.scrollTop;
   const headerContent = document.querySelector('.header__content');
   const headerContentBm = document.querySelector('.header__content__bm');
   const bmBtnClose = document.querySelectorAll('.bm__line');
-
+  const pageBody = document.querySelector("body");
 
   bmBtn.addEventListener("click", function(){
     headerContent.style.position = "absolute";
-    headerContent.style.paddingRight = "0px";
     headerContentBm.classList.toggle("none");
-    bmBtnClose.forEach(el=>{el.classList.toggle("close");})
+    bmBtnClose.forEach(el=>{el.classList.toggle("close");
+    pageBody.classList.toggle("scroll-none");
+    })
   })

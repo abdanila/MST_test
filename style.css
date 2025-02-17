@@ -910,7 +910,7 @@ a{
   padding-top: 0px;
 }
 .banner-info__grid__items__list__li button {
-  padding: 5px 24px;
+  padding: 12px 24px;
   font-size: 16px;
 }
 .banner-info__grid__items__list__li {
@@ -948,12 +948,9 @@ a{
   right: 163px;
 }
 }
-@media(max-width:770px){
+@media(max-width:768px){
   .header__banner img{
-    opacity: 0.25;
-    right: 4px;
-    width: 100%;
-    top: -150px;
+   display: none;
   }
   .banner__content__title {
     font-size: 40px;
@@ -993,7 +990,7 @@ a{
   position: absolute;
   width: 310px;
   bottom: 0;
-  right: 130px;
+  right: 0px;
 }
 .form__title {
   font-family: var(--font-base);
@@ -1006,13 +1003,13 @@ a{
   padding: 8.88px 16.82px 8.88px 22.16px;
   font-size: 16px;
   line-height: 150%;
-  width: 250px;
+  width: 100%;
 }
 .form-base button {
   padding: 12px 16.82px;
   font-size: 16px;
   margin-top: 16px;
-  width: 250px;
+  width: 100%;
 }
 .checkbox-label {
   font-size: 12px;
@@ -1026,7 +1023,7 @@ a{
   border-radius: 24px;
   height: 450px;
   padding: 60px 0px 60px clamp(3.125rem, -6.2317rem + 14.6199vw, 6.25rem);
-  background-image: url(/img/form-bg.png);
+  background-image: none;
   background-size: cover;
   background-position-x: right;
   background-repeat: no-repeat;
@@ -1053,14 +1050,68 @@ a{
 .header__content-logo{
   z-index: 10;
 }
+.pc{
+  display: none;
+}
+.mob{
+  display: block;
+}
+.header__content__bm__btn{
+  width: 30px;
+  height: 17px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 10;
+}
+.header__content{
+  justify-content: space-between;
+  padding-right: 30px;
+  position: absolute;
+  left: 0;
+  padding-left: 30px;
+}
+.bm__line{
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+}
+.close:nth-child(1){
+  position: absolute;
+  transform: rotate(45deg);
+}
+.close:nth-child(2){
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.close:nth-child(3){
+  display: none;
+}
+.header__ul{
+  flex-direction: column;
+}
+.header__content__bm{
+   position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    top: 0px;
+    height: 200vw;
+    padding-top: 100px;
+    left: 0;
+}
+.footer__ul {
+  gap: 25px;
+}
+.scroll-none{
+  overflow: hidden;
+}
+.form__content__grid {
+  grid-template-columns: 1fr 1fr;
+}
 }
 @media(max-width:544px){
-  .pc{
-    display: none;
-  }
-  .mob{
-    display: block;
-  }
   .logo-text {
     font-size: 24px;
     margin-right: 30px;
@@ -1137,57 +1188,6 @@ a{
     bottom: 87px;
     display: flow-root;
 }
-.header__content__bm__btn{
-  width: 30px;
-  height: 17px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  z-index: 10;
-}
-.header__content{
-  justify-content: space-between;
-  padding-right: 30px;
-  position: absolute;
-  left: 0;
-  padding-left: 30px;
-}
-.bm__line{
-  height: 3px;
-  width: 100%;
-  background-color: #fff;
-}
-.close:nth-child(1){
-  position: absolute;
-  transform: rotate(45deg);
-}
-.close:nth-child(2){
-  position: absolute;
-  transform: rotate(-45deg);
-}
-.close:nth-child(3){
-  display: none;
-}
-.header__ul{
-  flex-direction: column;
-}
-.header__content__bm{
-   position: absolute;
-    width: 100%;
-    background-color: rgba(0, 0, 0);
-    top: 0px;
-    height: 200vw;
-    padding-top: 100px;
-    left: 0;
-}
-.footer__ul {
-  gap: 25px;
-}
-.scroll-none{
-  overflow: hidden;
-}
 }
 @media(max-width:450px){
   .logo-text {
@@ -1222,7 +1222,7 @@ a{
   padding: 0px 30px;
 }
 .banner__content__order {
-  padding: 5px 24px;
+  padding: 12px 24px;
   font-size: 14px;
 }
 .banner-info__grid__items:nth-child(n+3){

@@ -966,9 +966,10 @@ a{
 }
 .banner__content__price__text {
   font-size: 16px;
+  gap: 8px;
 }
 .banner__content__price__num {
-  font-size: 22px;
+  font-size: 18px;
 }
 .banner__content__order {
   padding: 12px 32px;
@@ -979,7 +980,7 @@ a{
 }
 .banner-info__grid {
   display: grid;
-  grid-template-columns: 0fr 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 .banner__content__price {
@@ -1108,10 +1109,19 @@ a{
   overflow: hidden;
 }
 .form__content__grid {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
+.banner-info__container {
+  max-width: 1920px;
+  padding: 0px;
+  margin: 0 auto;
 }
-@media(max-width:544px){
+.banner-info__grid__items__list__li {
+  padding: 0px 30px 10px 30px;
+}
+.banner-info {
+  margin-top: 100px;
+}
   .logo-text {
     font-size: 24px;
     margin-right: 30px;
@@ -1132,15 +1142,9 @@ a{
 .header__banner {
   top: 0px;
 }
-.banner-info__grid__items__list__li__text {
-  font-size: 12px;
-}
 .banner-info__grid__items__list__li button {
   font-size: 14px;
   position: relative;
-}
-.banner-info__grid {
-  grid-template-columns: 0fr 1fr 1fr;
 }
 .form__content {
   height: 330px;
@@ -1160,7 +1164,7 @@ a{
 .form__input {
   padding: 7.88px 16.82px 7.88px 22.16px;
   font-size: 14px;
-  width: 268px;
+  width: 90%;
   background-color: #fff;
 }
 .form__input::placeholder {
@@ -1169,12 +1173,13 @@ a{
 .checkbox-label {
   font-size: 12px;
   background-color: #fff;
+  width: 90%;
 }
 .form-base button {
   padding: 10px 16.82px;
   font-size: 12px;
   margin-top: 16px;
-  width: 250px;
+  width: 90%;
 }
 .footer{
   position: relative;
@@ -1187,6 +1192,22 @@ a{
     position: absolute;
     bottom: 87px;
     display: flow-root;
+}
+.banner-info__grid__items-img{
+  width: 100%;
+}
+.banner-info__grid__items__list__li__text {
+  font-size: 14px;
+}
+.banner-info__grid__items:nth-child(n+3){
+  display: none;
+}
+.banner-info__grid__items__list__li button {
+  font-size: 14px;
+  width: max-content;
+}
+.banner-info__grid__items__list__li:nth-child(5){
+  justify-content: center;
 }
 }
 @media(max-width:450px){
@@ -1225,25 +1246,6 @@ a{
   padding: 12px 24px;
   font-size: 14px;
 }
-.banner-info__grid__items:nth-child(n+3){
-  display: none;
-}
-.banner-info__grid__items__list__li button {
-  font-size: 14px;
-  width: max-content;
-}
-.banner-info__grid__items__list__li:nth-child(5){
-  justify-content: center;
-}
-.banner-info__container {
-  max-width: 1920px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-.banner-info {
-  margin-top: 120px;
-}
-
 .footer__bottom__content__link {
     margin-right: 0px;
     position: absolute;

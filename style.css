@@ -113,6 +113,10 @@ body{
 .none{
   display: none!important;
 }
+.footer__bottom__content__btn{
+  font-style: italic!important;
+  font-weight: 400!important;
+}
 a{
   text-decoration: none;
 }

@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 @font-face {
     font-family: var(--font-02);
     src:
       local(var(--font-02)),
-      url("arial_bolditalicmt.ttf"),
+      url("/fonts/arial_bolditalicmt.ttf"),
       url("arialmt.ttf");
+  }
+  @font-face {
+    font-family: var(--font-01);
+    src:
+      local(var(--font-01)),
+      url("/fonts/Prata-Regular.ttf"),
   }
   /* Reset and base styles  */
 * {
